@@ -1,6 +1,6 @@
 #include "MKL25Z4.h"
 #include "eval.h"
-#include "dela.h"
+#include "Delay.h"
 char puerto;
 int i, contdig1 = 0, contdig2 = 0, displaySelect[2] = {0, 1};
 int pinesEntrada[8], pinesSalida[4];
@@ -187,7 +187,7 @@ int bcd(int c){
                 PT(puerto) -> PSOR = (0  << pinesSalida[2]);
                 PT(puerto) -> PSOR = (0  << pinesSalida[3]);
                 PT(puerto) -> PSOR = (1u << pinesSalida[4]);
-                delay_mss(30);
+                delay_ms(30);
                 PT(puerto) -> PSOR = (0  << displaySelect[1]);
                 PT(puerto) -> PSOR = (1u << displaySelect[2]);
                 PT(puerto) -> PSOR = (1u << pinesSalida[1]);
@@ -204,7 +204,7 @@ int bcd(int c){
                 PT(puerto) -> PSOR = (0  << pinesSalida[2]);
                 PT(puerto) -> PSOR = (0  << pinesSalida[3]);
                 PT(puerto) -> PSOR = (1u << pinesSalida[4]);
-                delay_mss(30);
+                delay_ms(30);
                 PT(puerto) -> PSOR = (0  << displaySelect[1]);
                 PT(puerto) -> PSOR = (1u << displaySelect[2]);
                 PT(puerto) -> PSOR = (1u << pinesSalida[1]);
@@ -221,7 +221,7 @@ int bcd(int c){
                 PT(puerto) -> PSOR = (0  << pinesSalida[2]);
                 PT(puerto) -> PSOR = (0  << pinesSalida[3]);
                 PT(puerto) -> PSOR = (1u << pinesSalida[4]);
-                delay_mss(30);
+                delay_ms(30);
                 PT(puerto) -> PSOR = (0  << displaySelect[1]);
                 PT(puerto) -> PSOR = (1u << displaySelect[2]);
                 PT(puerto) -> PSOR = (1u << pinesSalida[1]);
@@ -238,7 +238,7 @@ int bcd(int c){
                 PT(puerto) -> PSOR = (0  << pinesSalida[2]);
                 PT(puerto) -> PSOR = (0  << pinesSalida[3]);
                 PT(puerto) -> PSOR = (1u << pinesSalida[4]);
-                delay_mss(30);
+                delay_ms(30);
                 PT(puerto) -> PSOR = (0  << displaySelect[1]);
                 PT(puerto) -> PSOR = (1u << displaySelect[2]);
                 PT(puerto) -> PSOR = (1u << pinesSalida[1]);
@@ -255,7 +255,7 @@ int bcd(int c){
                 PT(puerto) -> PSOR = (0  << pinesSalida[2]);
                 PT(puerto) -> PSOR = (0  << pinesSalida[3]);
                 PT(puerto) -> PSOR = (1u << pinesSalida[4]);
-                delay_mss(30);
+                delay_ms(30);
                 PT(puerto) -> PSOR = (0  << displaySelect[1]);
                 PT(puerto) -> PSOR = (1u << displaySelect[2]);
                 PT(puerto) -> PSOR = (1u << pinesSalida[1]);
@@ -272,7 +272,7 @@ int bcd(int c){
                 PT(puerto) -> PSOR = (0  << pinesSalida[2]);
                 PT(puerto) -> PSOR = (0  << pinesSalida[3]);
                 PT(puerto) -> PSOR = (1u << pinesSalida[4]);
-                delay_mss(30);
+                delay_ms(30);
                 PT(puerto) -> PSOR = (0  << displaySelect[1]);
                 PT(puerto) -> PSOR = (1u << displaySelect[2]);
                 PT(puerto) -> PSOR = (1u << pinesSalida[1]);
